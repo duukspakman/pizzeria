@@ -8,26 +8,95 @@
 </head>
 <body>
 
+    <!-- Navigatiebalk -->
     <header>
         <div class="logo">🍕 Bella Italia</div>
         <nav>
             <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Over Ons</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Ons Menu</a></li>
+                <li><a href="#over-ons">Over Ons</a></li>
+                <li><a href="#openingstijden">Openingstijden</a></li>
             </ul>
         </nav>
+        <a href="tel:0123456789" class="call-btn">📞 Bel & Bestel</a>
     </header>
 
-    <section class="hero">
-        <h1>De lekkerste pizza's van de stad</h1>
-        <p>Vers bereid in onze traditionele steenoven met ingrediënten rechtstreeks uit Italië.</p>
-        <button class="btn">Bekijk Ons Menu</button>
+    <!-- Grote Welkomstsectie (Hero) -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>De lekkerste pizza's van de stad</h1>
+            <p>Vers bereid in onze traditionele steenoven met ingrediënten rechtstreeks uit Italië.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Bekijk Ons Menu</a>
+                <a href="tel:0123456789" class="btn btn-secondary">Direct Bellen</a>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Pizzeria Bella Italia. Bestel nu via: 012-3456789</p>
-    </footer>
+    <!-- Menukaart Sectie -->
+    <section id="menu" class="menu-section">
+        <h2>Onze Populaire Pizza's</h2>
+        <p class="subtitle">Klik op een pizza om direct je keuze te maken</p>
+        
+        <div class="menu-grid">
+            <!-- Pizza 1 -->
+            <div class="menu-card" onclick="alert('Je hebt gekozen voor Pizza Margherita! Bel 012-3456789 om te bestellen.')">
+                <div class="pizza-emoji">🧀</div>
+                <h3>Pizza Margherita</h3>
+                <p>Tomatensaus, mozzarella en verse basilicum.</p>
+                <div class="price">€ 9,50</div>
+                <button class="order-inline-btn">Bestellen</button>
+            </div>
 
-</body>
-</html>
+            <!-- Pizza 2 -->
+            <div class="menu-card" onclick="alert('Je hebt gekozen voor Pizza Pepperoni! Bel 012-3456789 om te bestellen.')">
+                <div class="pizza-emoji">🌶️</div>
+                <h3>Pizza Pepperoni</h3>
+                <p>Tomatensaus, mozzarella en pittige Italiaanse salami.</p>
+                <div class="price">€ 11,50</div>
+                <button class="order-inline-btn">Bestellen</button>
+            </div>
+
+            <!-- Pizza 3 -->
+            <div class="menu-card" onclick="alert('Je hebt gekozen voor Pizza Quattro Formaggi! Bel 012-3456789 om te bestellen.')">
+                <div class="pizza-emoji">👑</div>
+                <h3>Quattro Formaggi</h3>
+                <p>Tomatensaus en vier heerlijke soorten Italiaanse kaas.</p>
+                <div class="price">€ 12,50</div>
+                <button class="order-inline-btn">Bestellen</button>
+            </div>
+
+            <!-- Pizza 4 -->
+            <div class="menu-card" onclick="alert('Je hebt gekozen voor Pizza BBQ Chicken! Bel 012-3456789 om te bestellen.')">
+                <div class="pizza-emoji">🍗</div>
+                <h3>BBQ Chicken</h3>
+                <p>Tomatensaus, mozzarella, malse kip, ui en BBQ-saus.</p>
+                <div class="price">€ 13,00</div>
+                <button class="order-inline-btn">Bestellen</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Over Ons / Openingstijden Sectie -->
+    <section id="over-ons" class="info-section">
+        <div class="info-box">
+            <h2>Het Geheim van Onze Pizza's</h2>
+            <p>Al meer dan 15 jaar maken wij het deeg volgens geheim familierecept. Ons deeg rijst maar liefst 48 uur, waardoor de bodem super knapperig en licht verteerbaar is.</p>
+        </div>
+        
+        <div id="openingstijden" class="info-box hours-box">
+            <h2>Openingstijden</h2>
+            <ul>
+                <li><span>Maandag:</span> <span>Gesloten</span></li>
+                <li><span>Dinsdag t/m Donderdag:</span> <span>16:00 - 22:00</span></li>
+                <li><span>Vrijdag & Zaterdag:</span> <span>15:00 - 23:00</span></li>
+                <li><span>Zondag:</span> <span>16:00 - 22:00</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Pizzeria Bella Italia | Ontwikkeld door Duuk Spakman Webdesign</p>
+    </footer>
